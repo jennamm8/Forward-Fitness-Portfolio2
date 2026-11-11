@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Local Pizzeria - Order Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Your Local Pizzeria</h1>
+  <p>Build your perfect pizza and place your order below!</p>
+
+  <form action="#" method="post">
+    <!-- Customer Details -->
+    <fieldset>
+      <legend>Your Details</legend>
+
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </fieldset>
+
+    <!-- Build Your Pizza -->
+    <fieldset>
+      <legend>Pizza Order</legend>
+
+      <label>Size:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="size" value="Small" required> Small</label>
+        <label><input type="radio" name="size" value="Medium"> Medium</label>
+        <label><input type="radio" name="size" value="Large"> Large</label>
+      </div>
+
+      <label for="crust">Crust:</label>
+      <select id="crust" name="crust" required>
+        <option value="">--Select Crust--</option>
+        <option value="Hand-Tossed">Hand-Tossed</option>
+        <option value="Thin Crust">Thin Crust</option>
+        <option value="Deep Dish">Deep Dish</option>
+      </select>
+
+      <label>Toppings:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" name="toppings" value="Sausage"> Sausage</label>
+        <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+        <label><input type="checkbox" name="toppings" value="Onions"> Onions</label>
+        <label><input type="checkbox" name="toppings" value="Olives"> Olives</label>
+        <label><input type="checkbox" name="toppings" value="Extra Cheese"> Extra Cheese</label>
+      </div>
+    </fieldset>
+
+    <!-- Delivery & Comments -->
+    <fieldset>
+      <legend>Delivery & Comments</legend>
+
+      <label>Order Type:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="orderType" value="Delivery" required> Delivery</label>
+        <label><input type="radio" name="orderType" value="Pickup"> Pickup</label>
+      </div>
+
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions" rows="4" placeholder="Any special requests?"></textarea>
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <input type="submit" value="Place Order">
+      <input type="reset" value="Clear Form">
+    </div>
+  </form>
+</body>
+</html>

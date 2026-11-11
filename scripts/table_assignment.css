@@ -1,0 +1,36 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+th {
+  background-color: #336b96;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
